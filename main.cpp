@@ -17,6 +17,7 @@ public:
          assert(parr!=nullptr);
          count = mcount;
     }
+
     T& operator [](int i) {
         if (i<0 || count <=static_cast<size_t>(i) ) throw "aa";
         return parr[i];
